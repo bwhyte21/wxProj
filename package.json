@@ -1,0 +1,9 @@
+{
+  "name": "wxProj",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.5.0",
+    "grunt-bower-install": "~0.6.1"
+  }
+}
