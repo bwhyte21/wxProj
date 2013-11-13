@@ -17,7 +17,7 @@ module.exports = function(grunt){
 			}
 		},
 
-		instaMod: {
+		'bower-install': {
 			target: {
 				//point to the html file that is to be updated
 				html: 'index.html',
@@ -47,12 +47,14 @@ module.exports = function(grunt){
 
 		grunt.log.writeln('Scratching complete!');
 	});
-	//this function uses bower to pull some files from my githubl
+	//this function uses bower to pull some files from my github
 	grunt.registerTask('mate', function(name){
 		var bower = require('bower'),
 			bower_done = this.async();
 
-		bower.commands.install([name], {save: true})
+//		bower.commands.info([name]);
+
+		bower.commands.install([name])
 		.on('log', function(result){
 			grunt.log.writeln(['bower', result.id.cyan, result.message].join(' '));
 		})
@@ -61,8 +63,11 @@ module.exports = function(grunt){
 		})
 		.on('end', function(results){
 			bower_done();
+
 			//run grunt bower-install
-			grunt.task.run(['instaMod']);
+			grunt.task.run('bower-install');
 		});
+
+
 	});
 }
