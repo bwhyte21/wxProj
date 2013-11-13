@@ -1,0 +1,10 @@
+{
+  "name": "wxProj",
+  "version": "1.0.1",
+  "homepage": "https://github.com/bwhyte21/wxProj",
+  "authors": [
+    "bwhyte21 <bwhyte21@gmail.com>"
+  ],
+  "description": "A sample project for the use of being pulled using GruntJS and Bower",
+  "license": "none"
+}
