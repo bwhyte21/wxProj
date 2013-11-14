@@ -23,7 +23,7 @@ module.exports = function(grunt){
 				html: 'index.html',
 
 				//Optional:
-				//ignorePath: 'foldername/',
+				//ignorePath: 'wxProj/',
 
 				//customize how stylesheets are included
 				cssPattern: '<link rel="stylesheet" href="{{filePath}}"/>',
